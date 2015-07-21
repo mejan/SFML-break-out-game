@@ -1,0 +1,76 @@
+\hypertarget{classgame}{\section{game Class Reference}
+\label{classgame}\index{game@{game}}
+}
+
+
+{\ttfamily \#include $<$game.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgame_ad9c102127b5038f880067ad6c9198d38}{game} ()
+\item 
+\hyperlink{classgame_ae87abd20c4d8a7906fa48e690a5f1d07}{$\sim$game} ()
+\item 
+void \hyperlink{classgame_a71335d048da0ecac0ce4935697c0a9e9}{execute} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Game class, has all the objects and will check events, updates and draw/render for displaying the game for users.
+
+This class uses the other classes by dynamic memory, in the event the class checks for user input and set varibles accordently. Update will update the new positions of object and check if collides with each other. render is used to render all the dynamic objects to be displayed in the window. 
+
+Definition at line 25 of file game.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgame_ad9c102127b5038f880067ad6c9198d38}{\index{game@{game}!game@{game}}
+\index{game@{game}!game@{game}}
+\subsubsection[{game}]{\setlength{\rightskip}{0pt plus 5cm}game\-::game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgame_ad9c102127b5038f880067ad6c9198d38}
+Construtctor for the game set up the window size and titel, the key repeat disable. sets fps limit at 60 fps. calls a private function called set\-Up\-Walls that prepare the walls that the ball bounce on. it calls set\-Up\-Text, is there to prepare all the texts object this class has. Direct new gui to the meny pointer. It calls a private member function called new\-Game witch alocate dynamicly all the objects in the game. then it calls the public member function execute. 
+
+Definition at line 3 of file game.\-cpp.
+
+\hypertarget{classgame_ae87abd20c4d8a7906fa48e690a5f1d07}{\index{game@{game}!$\sim$game@{$\sim$game}}
+\index{$\sim$game@{$\sim$game}!game@{game}}
+\subsubsection[{$\sim$game}]{\setlength{\rightskip}{0pt plus 5cm}game\-::$\sim$game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgame_ae87abd20c4d8a7906fa48e690a5f1d07}
+distructor just delete all the allocated memeory. 
+
+Definition at line 17 of file game.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classgame_a71335d048da0ecac0ce4935697c0a9e9}{\index{game@{game}!execute@{execute}}
+\index{execute@{execute}!game@{game}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}void game\-::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgame_a71335d048da0ecac0ce4935697c0a9e9}
+Execute has som diffrent clock/timer to controll the fps will be right.
+
+The main thing about the member function is that it's a while that will continue while window is open, and it checks for events of users/program these events are trigger diffrent viribles to change value.
+
+Then it will call update, update changes the possistions and looks for collitions between objects and check if the that object should be removed.
+
+Then the private memberfunction render is called where it clears the screen and then draws/render the objects positions and display it in the widniow. 
+
+Definition at line 24 of file game.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mejan/\-Documents/skola/\-Cvilingjör\-I\-Datateknik/\-H\-T-\/13/\-Programerings\-\_\-metodiken/\-Projekt/\hyperlink{game_8h}{game.\-h}\item 
+/home/mejan/\-Documents/skola/\-Cvilingjör\-I\-Datateknik/\-H\-T-\/13/\-Programerings\-\_\-metodiken/\-Projekt/\hyperlink{game_8cpp}{game.\-cpp}\end{DoxyCompactItemize}

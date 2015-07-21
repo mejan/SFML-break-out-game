@@ -1,0 +1,167 @@
+\hypertarget{classplayer}{\section{player Class Reference}
+\label{classplayer}\index{player@{player}}
+}
+
+
+{\ttfamily \#include $<$player.\-h$>$}
+
+Inheritance diagram for player\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classplayer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classplayer_a97de83bce15f880241f561b55b016b02}{player} ()
+\item 
+\hyperlink{classplayer_aab5d2e47b80e0481f09ca0df8b823057}{$\sim$player} ()
+\item 
+bool \hyperlink{classplayer_a7e688c3070a1d177c5feca760d3c5d58}{get\-Left} () const 
+\item 
+bool \hyperlink{classplayer_ac7b4b5cf847d851ccb641e878d0ea50d}{get\-Right} () const 
+\item 
+void \hyperlink{classplayer_a381a5124691a73dd070d2d77bda937ac}{set\-Left} (bool L)
+\item 
+void \hyperlink{classplayer_a67b3c5f0d7533752b41e4094ac5a1743}{set\-Right} (bool R)
+\item 
+void \hyperlink{classplayer_a249c3d07b1658c079986646d54dc68f8}{move\-Left} ()
+\item 
+void \hyperlink{classplayer_aaefc0828be249ecc5a02c5431fda40c5}{move\-Right} ()
+\item 
+short int \hyperlink{classplayer_a6def826c0e7c2f169c6be74dbcd754b3}{get\-Life} () const 
+\item 
+void \hyperlink{classplayer_a1e9ab2a4e6896d08cef4a3d96d57bd8d}{lose\-Life} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Player class, this is the pad the player controlls.
+
+here is how it moves and extra life implementation. 
+
+Definition at line 11 of file player.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classplayer_a97de83bce15f880241f561b55b016b02}{\index{player@{player}!player@{player}}
+\index{player@{player}!player@{player}}
+\subsubsection[{player}]{\setlength{\rightskip}{0pt plus 5cm}player\-::player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classplayer_a97de83bce15f880241f561b55b016b02}
+default constructor, sets a texture, orgin and position of the player pad. also names how many extra lifes the user has. 
+
+Definition at line 4 of file player.\-cpp.
+
+\hypertarget{classplayer_aab5d2e47b80e0481f09ca0df8b823057}{\index{player@{player}!$\sim$player@{$\sim$player}}
+\index{$\sim$player@{$\sim$player}!player@{player}}
+\subsubsection[{$\sim$player}]{\setlength{\rightskip}{0pt plus 5cm}player\-::$\sim$player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classplayer_aab5d2e47b80e0481f09ca0df8b823057}
+
+
+Definition at line 17 of file player.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classplayer_a7e688c3070a1d177c5feca760d3c5d58}{\index{player@{player}!get\-Left@{get\-Left}}
+\index{get\-Left@{get\-Left}!player@{player}}
+\subsubsection[{get\-Left}]{\setlength{\rightskip}{0pt plus 5cm}bool player\-::get\-Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classplayer_a7e688c3070a1d177c5feca760d3c5d58}
+gets the bool value if it should move left. 
+
+Definition at line 43 of file player.\-cpp.
+
+\hypertarget{classplayer_a6def826c0e7c2f169c6be74dbcd754b3}{\index{player@{player}!get\-Life@{get\-Life}}
+\index{get\-Life@{get\-Life}!player@{player}}
+\subsubsection[{get\-Life}]{\setlength{\rightskip}{0pt plus 5cm}short int player\-::get\-Life (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classplayer_a6def826c0e7c2f169c6be74dbcd754b3}
+return have many extra lifes the player has. 
+
+Definition at line 51 of file player.\-cpp.
+
+\hypertarget{classplayer_ac7b4b5cf847d851ccb641e878d0ea50d}{\index{player@{player}!get\-Right@{get\-Right}}
+\index{get\-Right@{get\-Right}!player@{player}}
+\subsubsection[{get\-Right}]{\setlength{\rightskip}{0pt plus 5cm}bool player\-::get\-Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classplayer_ac7b4b5cf847d851ccb641e878d0ea50d}
+gets the bool value if it should move right. 
+
+Definition at line 47 of file player.\-cpp.
+
+\hypertarget{classplayer_a1e9ab2a4e6896d08cef4a3d96d57bd8d}{\index{player@{player}!lose\-Life@{lose\-Life}}
+\index{lose\-Life@{lose\-Life}!player@{player}}
+\subsubsection[{lose\-Life}]{\setlength{\rightskip}{0pt plus 5cm}void player\-::lose\-Life (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classplayer_a1e9ab2a4e6896d08cef4a3d96d57bd8d}
+decreas the life of the player with 1. 
+
+Definition at line 55 of file player.\-cpp.
+
+\hypertarget{classplayer_a249c3d07b1658c079986646d54dc68f8}{\index{player@{player}!move\-Left@{move\-Left}}
+\index{move\-Left@{move\-Left}!player@{player}}
+\subsubsection[{move\-Left}]{\setlength{\rightskip}{0pt plus 5cm}void player\-::move\-Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classplayer_a249c3d07b1658c079986646d54dc68f8}
+moves player pad to the left. Has a max see max\-Left for max left value. 
+
+Definition at line 28 of file player.\-cpp.
+
+\hypertarget{classplayer_aaefc0828be249ecc5a02c5431fda40c5}{\index{player@{player}!move\-Right@{move\-Right}}
+\index{move\-Right@{move\-Right}!player@{player}}
+\subsubsection[{move\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void player\-::move\-Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classplayer_aaefc0828be249ecc5a02c5431fda40c5}
+moves player pad to the right. Has a max see max\-Right for the max right value. 
+
+Definition at line 36 of file player.\-cpp.
+
+\hypertarget{classplayer_a381a5124691a73dd070d2d77bda937ac}{\index{player@{player}!set\-Left@{set\-Left}}
+\index{set\-Left@{set\-Left}!player@{player}}
+\subsubsection[{set\-Left}]{\setlength{\rightskip}{0pt plus 5cm}void player\-::set\-Left (
+\begin{DoxyParamCaption}
+\item[{bool}]{L}
+\end{DoxyParamCaption}
+)}}\label{classplayer_a381a5124691a73dd070d2d77bda937ac}
+sets bool value of left move. 
+
+Definition at line 19 of file player.\-cpp.
+
+\hypertarget{classplayer_a67b3c5f0d7533752b41e4094ac5a1743}{\index{player@{player}!set\-Right@{set\-Right}}
+\index{set\-Right@{set\-Right}!player@{player}}
+\subsubsection[{set\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void player\-::set\-Right (
+\begin{DoxyParamCaption}
+\item[{bool}]{R}
+\end{DoxyParamCaption}
+)}}\label{classplayer_a67b3c5f0d7533752b41e4094ac5a1743}
+sets bool value of right move. 
+
+Definition at line 23 of file player.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mejan/\-Documents/skola/\-Cvilingjör\-I\-Datateknik/\-H\-T-\/13/\-Programerings\-\_\-metodiken/\-Projekt/\hyperlink{player_8h}{player.\-h}\item 
+/home/mejan/\-Documents/skola/\-Cvilingjör\-I\-Datateknik/\-H\-T-\/13/\-Programerings\-\_\-metodiken/\-Projekt/\hyperlink{player_8cpp}{player.\-cpp}\end{DoxyCompactItemize}

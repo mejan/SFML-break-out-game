@@ -1,0 +1,157 @@
+\hypertarget{classbounce_ball}{\section{bounce\-Ball Class Reference}
+\label{classbounce_ball}\index{bounce\-Ball@{bounce\-Ball}}
+}
+
+
+{\ttfamily \#include $<$bounceball.\-h$>$}
+
+Inheritance diagram for bounce\-Ball\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbounce_ball}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbounce_ball_ab9cd9e9e07b75288688ddf48e8805808}{bounce\-Ball} ()
+\item 
+\hyperlink{classbounce_ball_a5aade551a140ca729b82db53a71923ea}{$\sim$bounce\-Ball} ()
+\item 
+void \hyperlink{classbounce_ball_a05e818abbd26e5f24f08604557b99be2}{movement\-Of\-Ball} (sf\-::\-Int32 \&update)
+\item 
+bool \hyperlink{classbounce_ball_aef61d98587fe7ac412dee9578dbad59d}{check\-If\-Dead} ()
+\item 
+void \hyperlink{classbounce_ball_ae23ce7e3294786a71ab6975162d3e08a}{set\-Ball\-Direction\-Y} (float y)
+\item 
+void \hyperlink{classbounce_ball_a81160a8f16a17df7906fbf624f62f857}{set\-Ball\-Direction\-X} (float x)
+\item 
+double \hyperlink{classbounce_ball_ac7d3e884d8b6d1f0f902dcf5be3a3890}{get\-Ball\-Direction\-Y} () const 
+\item 
+double \hyperlink{classbounce_ball_a5868831d08186838d6e21a35c8f733ad}{get\-Ball\-Direction\-X} () const 
+\item 
+bool \hyperlink{classbounce_ball_a3eb081b76ad67cc68759d3149e334b54}{shall\-Collide\-With} (sf\-::\-Sprite \&s, sf\-::\-Int32 update)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classbounce_ball}{bounce\-Ball} class the ball movement functions.
+
+this is the class for a ball that can change the direktion. and is supose to always be moving. 
+
+Definition at line 14 of file bounceball.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbounce_ball_ab9cd9e9e07b75288688ddf48e8805808}{\index{bounce\-Ball@{bounce\-Ball}!bounce\-Ball@{bounce\-Ball}}
+\index{bounce\-Ball@{bounce\-Ball}!bounceBall@{bounce\-Ball}}
+\subsubsection[{bounce\-Ball}]{\setlength{\rightskip}{0pt plus 5cm}bounce\-Ball\-::bounce\-Ball (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbounce_ball_ab9cd9e9e07b75288688ddf48e8805808}
+Constructor that loads texture to the ball set it's origin and start position. and randomly chose 1 of four start directions. 
+
+Definition at line 5 of file bounceball.\-cpp.
+
+\hypertarget{classbounce_ball_a5aade551a140ca729b82db53a71923ea}{\index{bounce\-Ball@{bounce\-Ball}!$\sim$bounce\-Ball@{$\sim$bounce\-Ball}}
+\index{$\sim$bounce\-Ball@{$\sim$bounce\-Ball}!bounceBall@{bounce\-Ball}}
+\subsubsection[{$\sim$bounce\-Ball}]{\setlength{\rightskip}{0pt plus 5cm}bounce\-Ball\-::$\sim$bounce\-Ball (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbounce_ball_a5aade551a140ca729b82db53a71923ea}
+do not have a function just there for show. 
+
+Definition at line 28 of file bounceball.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbounce_ball_aef61d98587fe7ac412dee9578dbad59d}{\index{bounce\-Ball@{bounce\-Ball}!check\-If\-Dead@{check\-If\-Dead}}
+\index{check\-If\-Dead@{check\-If\-Dead}!bounceBall@{bounce\-Ball}}
+\subsubsection[{check\-If\-Dead}]{\setlength{\rightskip}{0pt plus 5cm}bool bounce\-Ball\-::check\-If\-Dead (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbounce_ball_aef61d98587fe7ac412dee9578dbad59d}
+returns that the ball is dead if it's under the window. returns true if ball 800 px from window top. returns false if above. 
+
+Definition at line 34 of file bounceball.\-cpp.
+
+\hypertarget{classbounce_ball_a5868831d08186838d6e21a35c8f733ad}{\index{bounce\-Ball@{bounce\-Ball}!get\-Ball\-Direction\-X@{get\-Ball\-Direction\-X}}
+\index{get\-Ball\-Direction\-X@{get\-Ball\-Direction\-X}!bounceBall@{bounce\-Ball}}
+\subsubsection[{get\-Ball\-Direction\-X}]{\setlength{\rightskip}{0pt plus 5cm}double bounce\-Ball\-::get\-Ball\-Direction\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classbounce_ball_a5868831d08186838d6e21a35c8f733ad}
+returns the X axel direction/speed. 
+
+Definition at line 55 of file bounceball.\-cpp.
+
+\hypertarget{classbounce_ball_ac7d3e884d8b6d1f0f902dcf5be3a3890}{\index{bounce\-Ball@{bounce\-Ball}!get\-Ball\-Direction\-Y@{get\-Ball\-Direction\-Y}}
+\index{get\-Ball\-Direction\-Y@{get\-Ball\-Direction\-Y}!bounceBall@{bounce\-Ball}}
+\subsubsection[{get\-Ball\-Direction\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double bounce\-Ball\-::get\-Ball\-Direction\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classbounce_ball_ac7d3e884d8b6d1f0f902dcf5be3a3890}
+retruns the Y axel direction/speed. 
+
+Definition at line 51 of file bounceball.\-cpp.
+
+\hypertarget{classbounce_ball_a05e818abbd26e5f24f08604557b99be2}{\index{bounce\-Ball@{bounce\-Ball}!movement\-Of\-Ball@{movement\-Of\-Ball}}
+\index{movement\-Of\-Ball@{movement\-Of\-Ball}!bounceBall@{bounce\-Ball}}
+\subsubsection[{movement\-Of\-Ball}]{\setlength{\rightskip}{0pt plus 5cm}void bounce\-Ball\-::movement\-Of\-Ball (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Int32 \&}]{update}
+\end{DoxyParamCaption}
+)}}\label{classbounce_ball_a05e818abbd26e5f24f08604557b99be2}
+moves the ball, with a clock to make it smother. 
+
+Definition at line 30 of file bounceball.\-cpp.
+
+\hypertarget{classbounce_ball_a81160a8f16a17df7906fbf624f62f857}{\index{bounce\-Ball@{bounce\-Ball}!set\-Ball\-Direction\-X@{set\-Ball\-Direction\-X}}
+\index{set\-Ball\-Direction\-X@{set\-Ball\-Direction\-X}!bounceBall@{bounce\-Ball}}
+\subsubsection[{set\-Ball\-Direction\-X}]{\setlength{\rightskip}{0pt plus 5cm}void bounce\-Ball\-::set\-Ball\-Direction\-X (
+\begin{DoxyParamCaption}
+\item[{float}]{x}
+\end{DoxyParamCaption}
+)}}\label{classbounce_ball_a81160a8f16a17df7906fbf624f62f857}
+change the X axel direction/speed of ball with this function Input float. 
+
+Definition at line 47 of file bounceball.\-cpp.
+
+\hypertarget{classbounce_ball_ae23ce7e3294786a71ab6975162d3e08a}{\index{bounce\-Ball@{bounce\-Ball}!set\-Ball\-Direction\-Y@{set\-Ball\-Direction\-Y}}
+\index{set\-Ball\-Direction\-Y@{set\-Ball\-Direction\-Y}!bounceBall@{bounce\-Ball}}
+\subsubsection[{set\-Ball\-Direction\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void bounce\-Ball\-::set\-Ball\-Direction\-Y (
+\begin{DoxyParamCaption}
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}}\label{classbounce_ball_ae23ce7e3294786a71ab6975162d3e08a}
+change the Y axel direction/speed of ball with this function Input float. 
+
+Definition at line 43 of file bounceball.\-cpp.
+
+\hypertarget{classbounce_ball_a3eb081b76ad67cc68759d3149e334b54}{\index{bounce\-Ball@{bounce\-Ball}!shall\-Collide\-With@{shall\-Collide\-With}}
+\index{shall\-Collide\-With@{shall\-Collide\-With}!bounceBall@{bounce\-Ball}}
+\subsubsection[{shall\-Collide\-With}]{\setlength{\rightskip}{0pt plus 5cm}bool bounce\-Ball\-::shall\-Collide\-With (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Sprite \&}]{s, }
+\item[{sf\-::\-Int32}]{update}
+\end{DoxyParamCaption}
+)}}\label{classbounce_ball_a3eb081b76ad67cc68759d3149e334b54}
+Input sprite, if ball collide with sprite it will bounce on it. and return true. else return false and continue in old direction/speed.
+
+checks where and how the balls collides with a other object and desides the new direction/speed that it should have. 
+
+Definition at line 62 of file bounceball.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mejan/\-Documents/skola/\-Cvilingjör\-I\-Datateknik/\-H\-T-\/13/\-Programerings\-\_\-metodiken/\-Projekt/\hyperlink{bounceball_8h}{bounceball.\-h}\item 
+/home/mejan/\-Documents/skola/\-Cvilingjör\-I\-Datateknik/\-H\-T-\/13/\-Programerings\-\_\-metodiken/\-Projekt/\hyperlink{bounceball_8cpp}{bounceball.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,232 @@
+\hypertarget{classgui}{\section{gui Class Reference}
+\label{classgui}\index{gui@{gui}}
+}
+
+
+{\ttfamily \#include $<$gui.\-h$>$}
+
+Inheritance diagram for gui\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgui}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgui_a83e2c722e7fec575b45b9cb33b73607d}{gui} ()
+\item 
+\hyperlink{classgui_aec3eac5e4971812949be5e1a8a82ce55}{$\sim$gui} ()
+\item 
+void \hyperlink{classgui_adb0d03c56fce76b17a4884da45819525}{gui\-Update} ()
+\item 
+void \hyperlink{classgui_af6e2c9f41dae730e0b981ede035ca17c}{set\-Markted\-On\-Meny} (bool markted)
+\item 
+void \hyperlink{classgui_ab9d74152a7940692cb0c7a6edae1a9c3}{set\-Choice\-Done} ()
+\item 
+void \hyperlink{classgui_ad0d717e33022d183e43c88271ca5223e}{game\-Over} (sf\-::\-Int32 \&update)
+\item 
+void \hyperlink{classgui_ae28760870545c851ce09dfc691a4cd48}{winner} (sf\-::\-Int32 \&update)
+\item 
+bool \hyperlink{classgui_a7740e38a83ea37765bc62d3b18e9a944}{get\-Play} ()
+\item 
+bool \hyperlink{classgui_a7366788ae4d6c53f8a9474482d20490a}{get\-Show\-Meny} () const 
+\item 
+sf\-::\-Text \hyperlink{classgui_a9ff3aea558d1d738b33af5faece0c278}{get\-Start} ()
+\item 
+sf\-::\-Text \hyperlink{classgui_ada8b28974e6d5d6f6419f9d9aa8c3324}{get\-Quit} ()
+\item 
+sf\-::\-Text \hyperlink{classgui_a01078d72a91a9c5d224f3069a16aaf49}{get\-Game\-Over} ()
+\item 
+sf\-::\-Text \hyperlink{classgui_ad8947f61e2f74be47ef6c729fcb7352c}{get\-Win} ()
+\item 
+void \hyperlink{classgui_a106730791e450bc2a0d1022c3b28089e}{new\-Game\-Over} ()
+\item 
+void \hyperlink{classgui_ade8187f38b25d416a36cea7385c29cc6}{new\-Win} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file gui.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgui_a83e2c722e7fec575b45b9cb33b73607d}{\index{gui@{gui}!gui@{gui}}
+\index{gui@{gui}!gui@{gui}}
+\subsubsection[{gui}]{\setlength{\rightskip}{0pt plus 5cm}gui\-::gui (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgui_a83e2c722e7fec575b45b9cb33b73607d}
+default construtor for the gui.
+
+loads background texture. set showmeny to true. set the meny to mark the start text. setting up the diffrent text objects. and sets the moving speed and direction of gameover and winning text objects. 
+
+Definition at line 3 of file gui.\-cpp.
+
+\hypertarget{classgui_aec3eac5e4971812949be5e1a8a82ce55}{\index{gui@{gui}!$\sim$gui@{$\sim$gui}}
+\index{$\sim$gui@{$\sim$gui}!gui@{gui}}
+\subsubsection[{$\sim$gui}]{\setlength{\rightskip}{0pt plus 5cm}gui\-::$\sim$gui (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgui_aec3eac5e4971812949be5e1a8a82ce55}
+
+
+Definition at line 44 of file gui.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classgui_ad0d717e33022d183e43c88271ca5223e}{\index{gui@{gui}!game\-Over@{game\-Over}}
+\index{game\-Over@{game\-Over}!gui@{gui}}
+\subsubsection[{game\-Over}]{\setlength{\rightskip}{0pt plus 5cm}void gui\-::game\-Over (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Int32 \&}]{update}
+\end{DoxyParamCaption}
+)}}\label{classgui_ad0d717e33022d183e43c88271ca5223e}
+moves the gameover text from roof to middel when moved to the middel it then sets that the meny should be shown again. and set that user made choice to false again. when the text is in the middel it sets showmeny to true. 
+
+Definition at line 66 of file gui.\-cpp.
+
+\hypertarget{classgui_a01078d72a91a9c5d224f3069a16aaf49}{\index{gui@{gui}!get\-Game\-Over@{get\-Game\-Over}}
+\index{get\-Game\-Over@{get\-Game\-Over}!gui@{gui}}
+\subsubsection[{get\-Game\-Over}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Text gui\-::get\-Game\-Over (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgui_a01078d72a91a9c5d224f3069a16aaf49}
+returns text object Game\-Over 
+
+Definition at line 115 of file gui.\-cpp.
+
+\hypertarget{classgui_a7740e38a83ea37765bc62d3b18e9a944}{\index{gui@{gui}!get\-Play@{get\-Play}}
+\index{get\-Play@{get\-Play}!gui@{gui}}
+\subsubsection[{get\-Play}]{\setlength{\rightskip}{0pt plus 5cm}bool gui\-::get\-Play (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgui_a7740e38a83ea37765bc62d3b18e9a944}
+returns a bool value true aslong as quit Text object in gui is the choice. 
+
+Definition at line 86 of file gui.\-cpp.
+
+\hypertarget{classgui_ada8b28974e6d5d6f6419f9d9aa8c3324}{\index{gui@{gui}!get\-Quit@{get\-Quit}}
+\index{get\-Quit@{get\-Quit}!gui@{gui}}
+\subsubsection[{get\-Quit}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Text gui\-::get\-Quit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgui_ada8b28974e6d5d6f6419f9d9aa8c3324}
+returns text object quit. 
+
+Definition at line 111 of file gui.\-cpp.
+
+\hypertarget{classgui_a7366788ae4d6c53f8a9474482d20490a}{\index{gui@{gui}!get\-Show\-Meny@{get\-Show\-Meny}}
+\index{get\-Show\-Meny@{get\-Show\-Meny}!gui@{gui}}
+\subsubsection[{get\-Show\-Meny}]{\setlength{\rightskip}{0pt plus 5cm}bool gui\-::get\-Show\-Meny (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classgui_a7366788ae4d6c53f8a9474482d20490a}
+Returns true if the meny is suppose to shown if start or quit in gui gets choicen then it will returns false. And if start is markted and choicsend then show\-Meny member till be false. 
+
+Definition at line 95 of file gui.\-cpp.
+
+\hypertarget{classgui_a9ff3aea558d1d738b33af5faece0c278}{\index{gui@{gui}!get\-Start@{get\-Start}}
+\index{get\-Start@{get\-Start}!gui@{gui}}
+\subsubsection[{get\-Start}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Text gui\-::get\-Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgui_a9ff3aea558d1d738b33af5faece0c278}
+returns text object start. 
+
+Definition at line 107 of file gui.\-cpp.
+
+\hypertarget{classgui_ad8947f61e2f74be47ef6c729fcb7352c}{\index{gui@{gui}!get\-Win@{get\-Win}}
+\index{get\-Win@{get\-Win}!gui@{gui}}
+\subsubsection[{get\-Win}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Text gui\-::get\-Win (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgui_ad8947f61e2f74be47ef6c729fcb7352c}
+returns text object win 
+
+Definition at line 119 of file gui.\-cpp.
+
+\hypertarget{classgui_adb0d03c56fce76b17a4884da45819525}{\index{gui@{gui}!gui\-Update@{gui\-Update}}
+\index{gui\-Update@{gui\-Update}!gui@{gui}}
+\subsubsection[{gui\-Update}]{\setlength{\rightskip}{0pt plus 5cm}void gui\-::gui\-Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgui_adb0d03c56fce76b17a4884da45819525}
+update the color change of the text objects(start and game over). 
+
+Definition at line 46 of file gui.\-cpp.
+
+\hypertarget{classgui_a106730791e450bc2a0d1022c3b28089e}{\index{gui@{gui}!new\-Game\-Over@{new\-Game\-Over}}
+\index{new\-Game\-Over@{new\-Game\-Over}!gui@{gui}}
+\subsubsection[{new\-Game\-Over}]{\setlength{\rightskip}{0pt plus 5cm}void gui\-::new\-Game\-Over (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgui_a106730791e450bc2a0d1022c3b28089e}
+resets the possition of Game\-Over text object. 
+
+Definition at line 99 of file gui.\-cpp.
+
+\hypertarget{classgui_ade8187f38b25d416a36cea7385c29cc6}{\index{gui@{gui}!new\-Win@{new\-Win}}
+\index{new\-Win@{new\-Win}!gui@{gui}}
+\subsubsection[{new\-Win}]{\setlength{\rightskip}{0pt plus 5cm}void gui\-::new\-Win (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgui_ade8187f38b25d416a36cea7385c29cc6}
+resets the possition of win text object. 
+
+Definition at line 103 of file gui.\-cpp.
+
+\hypertarget{classgui_ab9d74152a7940692cb0c7a6edae1a9c3}{\index{gui@{gui}!set\-Choice\-Done@{set\-Choice\-Done}}
+\index{set\-Choice\-Done@{set\-Choice\-Done}!gui@{gui}}
+\subsubsection[{set\-Choice\-Done}]{\setlength{\rightskip}{0pt plus 5cm}void gui\-::set\-Choice\-Done (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgui_ab9d74152a7940692cb0c7a6edae1a9c3}
+sets that the user has choicen on the gui (\char`\"{}meny\char`\"{}). 
+
+Definition at line 60 of file gui.\-cpp.
+
+\hypertarget{classgui_af6e2c9f41dae730e0b981ede035ca17c}{\index{gui@{gui}!set\-Markted\-On\-Meny@{set\-Markted\-On\-Meny}}
+\index{set\-Markted\-On\-Meny@{set\-Markted\-On\-Meny}!gui@{gui}}
+\subsubsection[{set\-Markted\-On\-Meny}]{\setlength{\rightskip}{0pt plus 5cm}void gui\-::set\-Markted\-On\-Meny (
+\begin{DoxyParamCaption}
+\item[{bool}]{markted}
+\end{DoxyParamCaption}
+)}}\label{classgui_af6e2c9f41dae730e0b981ede035ca17c}
+set witch text object is markt. 
+
+Definition at line 56 of file gui.\-cpp.
+
+\hypertarget{classgui_ae28760870545c851ce09dfc691a4cd48}{\index{gui@{gui}!winner@{winner}}
+\index{winner@{winner}!gui@{gui}}
+\subsubsection[{winner}]{\setlength{\rightskip}{0pt plus 5cm}void gui\-::winner (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Int32 \&}]{update}
+\end{DoxyParamCaption}
+)}}\label{classgui_ae28760870545c851ce09dfc691a4cd48}
+moves the winning text from roof to middel when moved to the middel it then sets that the meny should be shown again. and set that user made choice to false again. when the text is in the middel it sets showmeny to true. 
+
+Definition at line 76 of file gui.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mejan/\-Documents/skola/\-Cvilingjör\-I\-Datateknik/\-H\-T-\/13/\-Programerings\-\_\-metodiken/\-Projekt/\hyperlink{gui_8h}{gui.\-h}\item 
+/home/mejan/\-Documents/skola/\-Cvilingjör\-I\-Datateknik/\-H\-T-\/13/\-Programerings\-\_\-metodiken/\-Projekt/\hyperlink{gui_8cpp}{gui.\-cpp}\end{DoxyCompactItemize}
